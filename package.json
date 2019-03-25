@@ -1,0 +1,17 @@
+{
+  "name": "eiof.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Matthew Elliott",
+  "devDependencies": {
+    "connect": "^3.6.6",
+    "serve-static": "^1.13.2"
+  },
+  "nodemonConfig": {
+    "ext": "html"
+  }
+}
