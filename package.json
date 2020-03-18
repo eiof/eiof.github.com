@@ -9,9 +9,15 @@
   "author": "Matthew Elliott",
   "devDependencies": {
     "connect": "^3.6.6",
+    "prettier": "^1.19.1",
     "serve-static": "^1.13.2"
   },
   "nodemonConfig": {
     "ext": "html"
+  },
+  "prettier": {
+    "htmlWhitespaceSensitivity": "strict",
+    "singleQuote": true,
+    "printWidth": 88
   }
 }

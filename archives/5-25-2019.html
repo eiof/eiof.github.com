@@ -2,18 +2,31 @@
 <html lang="en">
   <head>
     <title>Matt Elliott Profile</title>
-    <meta name="viewport" content="width=devi3ce-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
+    <style>
+      .iframe-container iframe {
+        position: absolute;
+        border: 0;
+        display: block;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .iframe-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+    </style>
   </head>
   <body>
-    <div class="relative w-100" style="z-index: -1">
-      <svg class="absolute tc" style="top: -16rem; left: -4rem;" width="auto" height="1000">
-        <path d="M 262.9,252.2 C 210.1,338.2 253.37829468571422,429.0861702285715 295.31646554285715,531.1259606285714 339.6176722857143,635.3005874857142 511.2,530.8329310857143 620.3,549.3329310857143 750.6,571.4329310857142 868.2944268,712.5199110857143 987.3,686.5 1097.7334074285714,662.8759447428571 1201.5900285714285,543.5005874857143 1173,429.2 1144.4099714285715,311.61741822857147 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" style="fill: rgba(53,126,221,0.2)"></path>
-      </svg>
-    </div>
     <header>
       <div class="tc mt4">
         <img
@@ -22,51 +35,77 @@
           title="Avatar picture of Matthew Elliott"
         />
         <h1 class="fw6 f1 fl w-100 black-70 avenir">@eiof</h1>
+        <hr class="mw4 bb bw1 b--black-30" />
         <p class="tc black-70 f5 avenir serif">
-          March 18th, 2020
+          March 25th, 2019
         </p>
       </div>
     </header>
-    <main>
+    <main class="bg-white">
       <div class="ph4 ph5-m ph6-l">
         <section id="dev">
           <h2 class="tc fw6 f2 mt6 avenir">
             <a class="db blue no-underline underline-hover" href="#dev"
-              >Software Development</a
+              >Development</a
             >
           </h2>
-
           <article class="measure-wide mt5 center black-70">
-            <h3 class="fw6 f3 avenir">My Latest Work In the Wild</h3>
+            <h3 class="fw6 f3 avenir">Managing Technical Debt in JavaScript</h3>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              In 2020, I'm building a
+              The company I work for, Club OS, is undergoing a "growing-up"
+              phase.
+            </p>
+            <p class="lh-copy f4 f3-ns black-70 baskerville">
+              A large challenge we face is addressing technical debt. The
+              front-end team has come together to create standards and practices
+              for working with untested, polluted JavaScript. I'm proud of the
+              documentation we put together, so here is some of it.
+            </p>
+            <p class="lh-copy f4 f3-ns black-70 baskerville">
               <a
                 class="blue no-underline underline-hover"
-                href="https://blog.getdbt.com/announcing-the-dbt-ide/"
-                >browser-based IDE</a
-              >.
+                href="https://gist.github.com/eiof/9ff747d949f9e6c75c192b572e2b6c56"
+                >Gist: Modular Client Code</a
+              >
             </p>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              I would have never expected to add "developed an IDE" to my resume.
-              The problem space has been vast and incredibly interesting, as well as challenging.
+              As we pursue debt recovery, we've also began
+              <a
+                class="blue no-underline underline-hover"
+                href="https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/"
+                >budgeting</a
+              >
+              for performance. I hope to share our progress in a few months.
+            </p>
+          </article>
+
+          <article class="measure-wide mt5 center black-70">
+            <h3 class="fw6 f3 avenir">My Work In the Wild</h3>
+            <p class="lh-copy f4 f3-ns black-70 baskerville">
+              A lot of code that I write and review for Club OS is not visible
+              to the public. However, we recently prototyped a consumer facing
+              application. It's built using React and Redux, and is mostly
+              rendered client-side. A demo can be found here:
             </p>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              Is it presumptuous for us to build our own IDE?
-              Isn't this a problem that's been solved many times over?
-              Do I want to solve this problem at all???
+              <a
+                class="blue no-underline underline-hover"
+                href="https://clients.club-os.com/locations/4559/schedule"
+                >https://clients.club-os.com/locations/4559/schedule</a
+              >
             </p>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              I don't think so; yes; I don't know.
-              Here's what I do know.
-              I yearn to learn, I love solving problems, and I prefer to do both with a team of talented people.
-              And I've got that.
-              So, here's to the IDE and <a href="https://getdbt.com">dbt Cloud</a>.
+              Currently, source maps are available, so you'll be able to view
+              how we write code. I acknowledge the application has rough spots.
+              In the future, I'd like to spend more time on optimizing our
+              build, and improve how we organize synchronous actions through
+              Redux.
             </p>
           </article>
 
           <article class="measure-wide center mt5 black-70">
             <h3 class="fw6 f3 avenir">
-              Reflecting on My Time with
+              Current State of
               <a
                 class="blue no-underline underline-hover"
                 href="https://www.npmjs.com/package/react-json-schema"
@@ -74,44 +113,42 @@
               >
             </h3>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              Four years ago, I needed to store React component composition in a database.
-              The resulting source code was short &ndash; gist-able.
-              But there was more than source code!
-              I created a sandbox, wrote tests, and shared the code within my organization in confidence. 
-              I figured it'd be valuable to other developers, so it was open-sourced.
+              A few years ago, I open-sourced some code we use at Club OS. It's
+              going through a bit of an
+              <a
+                class="blue no-underline underline-hover"
+                href="https://github.com/TechniqueSoftware/react-json-schema/issues/34"
+                target="_blank"
+                >identity crisis</a
+              >
+              at the moment. I've played around with some ideas, and I am
+              currently thinking documentation is needed over code changes. It's
+              something I wish to get back to soon.
             </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              A few issues came in, suggesting to expand its functionality.
-              I supported these ideas.
-            </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              We could add more mappings by resolving strings to expressions.
-              We could add JSON validation to prevent parsing from breaking.
-              We could support middleware for manipulating JSON and components during parsing.
-              We could make the process of constructing React components from JSON better!
-            </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              I rewrote react-json-schema.
-              Twice.
-              I never pushed the code.
-            </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              I left issues and pull requests open for a year, frusterated with not having a "right" answer.
-              An answer that I was willing to share with my digital peers.
-            </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              It took me a long time to realize react-json-schema did not need to be improved.
-              Validation and manipulation could happen outside of react-json-schema.
-              What react-json-schema needs is more of why it was open-sourced and not just posted as a gist.
-            </p>
-            <p class="lh-copy f4 f3-ns black-70 baskerville">
-              So, what would I like to see for react-json-schema?
-              Better documentation, including FAQs.
-              Improved testing to make experimentation accessible.
-              Automation to make maintenance less of a chore.
-              Continue to <a href="https://github.com/idyll-lang/idyll/issues/121#issuecomment-321999547">serve as insipration</a>.
-              Not more features.
-            </p>
+          </article>
+        </section>
+
+        <section id="other">
+          <h2 class="tc fw6 f2 mt6 avenir">
+            <a class="db blue no-underline underline-hover" href="#other"
+              >Other Stuff</a
+            >
+          </h2>
+          <article class="measure-wide center mt5 black-70">
+            <h3 class="fw6 f3 avenir">Backpacking Rae Lakes Loop, Oct. 2018</h3>
+            <article class="mw5 mw6-ns center">
+              <div class="iframe-container">
+                <iframe
+                  title="Backpacking Rae Lakes Loop video"
+                  src="https://drive.google.com/file/d/1PWzGn1XuHRyx8u045ssXX8QVKuxaAId5/preview"
+                  width="480"
+                  height="360"
+                ></iframe>
+              </div>
+              <p class="tc black-70 avenir">
+                Video quality may be poor. Scenes were shot on an iPhone 5.
+              </p>
+            </article>
           </article>
         </section>
 
@@ -124,9 +161,9 @@
           <article class="measure-wide center mt5 black-70">
             <p class="lh-copy f4 f3-ns black-70 baskerville">
               This website is my (Matt Elliott) living portfolio. As my thoughts
-              changes over time, so will the site. Below, I've linked to people that
-              I have learend from and respect. Also, they are more gifted at
-              maintaining a digital presence.
+              changes over time, so will the site. Below, I've linked some of my
+              influences. I believe they are more gifted at maintaining a
+              digital presence.
             </p>
             <ul class="lh-copy f4 f3-ns black-70 baskerville">
               <li>
@@ -177,7 +214,7 @@
               </li>
             </ul>
             <p class="lh-copy f4 f3-ns black-70 baskerville">
-              Find more of my digital presence linked below.
+              If you'd like to learn more about me, use the links in the footer.
             </p>
           </article>
         </section>
@@ -202,7 +239,7 @@
             >Github</a
           >
           <a
-            href="/archives/"
+            href="/archives"
             title="Archives"
             class="f6 dib ph2 link blue no-underline underline-hover"
             >Archives</a

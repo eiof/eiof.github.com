@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Matt Elliott Archives</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
+    <style>
+      .iframe-container iframe {
+        position: absolute;
+        border: 0;
+        display: block;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .iframe-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="tc mt4">
+        <img
+          src="https://avatars3.githubusercontent.com/u/4501220?s=460&v=4"
+          class="br-100 h4 w4 dib"
+          title="Avatar picture of Matthew Elliott"
+        />
+        <h1 class="fw6 f1 fl w-100 black-70 avenir">@eiof</h1>
+        <hr class="mw4 bb bw1 b--black-30" />
+      </div>
+    </header>
+    <main class="bg-white">
+      <div class="ph4 ph5-m ph6-l">
+        <section id="archives">
+          <h2 class="tc fw6 f2 mt6 avenir">Archives</h2>
+          <div class="measure-wide mt5 center black-70">
+            <ul class="f4 f3-ns black-70 avenir list pl0 tc">
+              <li class="pv4">
+                <a class="link blue no-underline underline-hover" href="/"
+                  >Current</a
+                >
+              </li>
+              <li class="pv4">
+                <a
+                  class="link blue no-underline underline-hover"
+                  href="/archives/5-25-2019.html"
+                  >March 25<sup>th</sup>, 2019</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="pv4 ph3 ph5-m ph6-l mid-gray avenir">
+        <small class="f6 db tc">
+          &copy;
+          <span id="copyright-date"></span>
+          ateiof.com
+        </small>
+        <div class="tc mt3">
+          <a
+            href="https://ateiof.com/archives"
+            title="Archives"
+            class="f6 dib ph2 link blue no-underline underline-hover"
+            >Archives</a
+          >
+          <a
+            href="https://www.linkedin.com/in/elliottisonfire/"
+            title="LinkedIn"
+            class="f6 dib ph2 link blue no-underline underline-hover"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/eiof"
+            title="Github"
+            class="f6 dib ph2 link blue no-underline underline-hover"
+            >Github</a
+          >
+        </div>
+      </footer>
+    </main>
+    <script type="text/JavaScript">
+      var d=new Date();
+      document.getElementById('copyright-date').textContent=d.getFullYear();
+    </script>
+  </body>
+</html>
